@@ -58,6 +58,7 @@ from rst2pdf.languages import get_language_available
 
 class PDFBuilder(Builder):
     name = 'pdf'
+    format = 'pdf'
     out_suffix = '.pdf'
 
     def init(self):
