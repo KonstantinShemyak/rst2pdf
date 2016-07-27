@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import os
-from os.path import abspath, dirname, expanduser, join
+from os.path import abspath, dirname
 import sys
 import tempfile
 from copy import copy

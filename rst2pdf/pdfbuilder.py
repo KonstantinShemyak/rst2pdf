@@ -23,19 +23,16 @@ import re
 import sys
 import os
 from os import path
-from os.path import abspath, dirname, expanduser, join
-from pprint import pprint
-from copy import copy, deepcopy
-from xml.sax.saxutils import unescape, escape
+from os.path import abspath, dirname
+from copy import copy
 from traceback import print_exc
 from cStringIO import StringIO
-from urlparse import urljoin, urlparse, urlunparse
+from urlparse import urlunparse
 
-from pygments.lexers import get_lexer_by_name, guess_lexer
+from pygments.lexers import guess_lexer
 
 from docutils import writers
 from docutils import nodes
-from docutils import languages
 from docutils.transforms.parts import Contents
 from docutils.io import FileOutput
 import docutils.core
@@ -47,11 +44,11 @@ from sphinx.util.console import darkgreen, red
 from sphinx.util import SEP
 from sphinx.util import ustrftime, texescape
 from sphinx.environment import NoUri
-from sphinx.locale import admonitionlabels, versionlabels
+from sphinx.locale import versionlabels
 if sphinx.__version__ >= '1.':
     from sphinx.locale import _
 
-from rst2pdf import createpdf, pygments_code_block_directive, oddeven_directive
+from rst2pdf import createpdf, pygments_code_block_directive
 from rst2pdf.log import log
 from rst2pdf.languages import get_language_available
 

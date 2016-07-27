@@ -21,10 +21,10 @@ are combined into the instantiated object.
 from copy import copy
 
 from log import nodeid, log
-from flowables import  MySpacer, MyIndenter, Reference, DelayedTable, Table
+from flowables import MySpacer, MyIndenter, Reference, DelayedTable, Table
 from image import MyImage, VectorPdf
 
-from opt_imports import Paragraph, sphinx
+from opt_imports import sphinx
 
 from nodehandlers import NodeHandler, FontHandler, HandleEmphasis
 import math_flowable
